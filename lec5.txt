@@ -1,0 +1,86 @@
+Zahra Farhan Abbas 
+Fourth stage - network - morning
+Discussion Web
+lec 5
+1.What are the limitations of CSS ?
+CSS (Cascading Style Sheets) is a powerful and widely used 
+language for describing the presentation of web pages. 
+However, it does have some limitations. 
+- Lack of complex calculations
+- Limited control over page layout
+- Browser compatibility
+- Lack of variables and constants
+- Limited dynamic capabilities
+- Limited control over elements' behavior
+- Lack of complex selectors
+Despite these limitations, CSS remains a crucial tool for web development, and 
+many of its shortcomings can be mitigated through the use of complementary 
+technologies and techniques.
+
+2. How many ways can a CSS be integrated as a web page?
+1) Inline CSS: <h1 style="color: blue;">Hello, World!</h1>
+2)Internal CSS: <head>
+ <style>h1 {color: blue; }</style>
+ </head>
+ <body><h1>Hello, World!</h1></body>
+3)External CSS: External CSS involves linking an external CSS file to an HTML 
+document using the <link> element.
+<head>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body><h1>Hello, World!</h1></body>
+This method allows for better organization and reusability of styles across 
+multiple pages. It is the recommended approach for larger projects.
+
+3. Create a home page for a ressturant with what you’ve 
+learned from HTML & CSS
+<!DOCTYPE html>
+<html><head>
+ <title>Restaurant Home Page</title>
+ <link rel="stylesheet" type="text/css" href="styles.css > 
+</head>
+<body><header><nav>
+ <ul> <li><a href="#">Home</a></li>
+ <li><a href="#">Menu</a></li>
+ <li><a href="#">Reservations</a></li>
+ <li><a href="#">Contact</a></li></ul>
+ </nav>
+ </header>
+ <section class="hero">
+ <div class="hero-content">
+ <h1>Welcome to Delicious Eats</h1>
+ <p>Experience the finest dining in town</p>
+ <a href="#" class="btn">Make a Reservation</a></div>
+ </section>
+ <section class="about">
+ <div class="container">
+ <h2>About Us</h2>
+ <p>The customer is very important, the customer will 
+be followed by the customer.Vestibulum eleifend no no hate 
+lacinia, that was targeted by CNN.</p> </div>
+ </section>
+ <section class="menu">
+ <div class="container">
+ <h2>Our Menu</h2>
+ <div class="menu-item">
+ <img src="1.jpg" alt="Menu Item 1">
+ <h3>Menu Item 1</h3></div>
+ <div class="menu-item">
+ <img src="2.jpg" alt="Menu Item 2">
+ <h3>Menu Item 2</h3></div>
+ <div class="menu-item">
+ <img src="3.jpg" alt="Menu Item 3">
+ <h3>Menu Item 3</h3>
+ </div></div></section>
+ <footer>
+ <div class="container">
+<p>&copy; 2023 Delicious Eats. All rights reserved.</p>
+</div></footer>
+</body></html>
+Styles.css
+body{background-color:rgb(247, 75, 8) ;}
+body, h1, h2, h3, p, ul, li {margin: 0;padding: 0;}
+ body {font-family: Arial, sans-serif;}
+.container {background-color:rgb(247, 75, 8);
+ max-width:960px;margin: 0 auto;padding: 20px;}
+header {background-color:rgb(247, 75, 8);color: #ff

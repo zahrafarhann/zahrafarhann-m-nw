@@ -1,0 +1,83 @@
+Zahra Farhan Abbas 
+Fourth stage - network - morning
+Discussion Web
+lec 6
+1)What are the differences between the opacity property and 
+alpha channel in rgba or hsla?
+1)Opacity Property:
+-The opacity property is a single value (range: 0 to 1) that 
+applies to the entire element and its contents, including text 
+and child elements.
+-It affects the element and all its descendants uniformly, 
+making them transparent.
+-When an element is set to a lower opacity, it affects not only 
+the visual appearance but also the interaction with the 
+element.The element and its contents become less visible, and 
+any events triggered within the element will be less responsive.
+-The opacity property affects the entire element, including its 
+background, border, and any child elements, regardless of their 
+individual opacity settings.
+-The opacity property can be animated using CSS transitions or 
+animations.
+2)Alpha Channel in RGBA and HSLA:
+-The alpha channel is a separate value (range: 0 to 1) that is 
+added to an RGBA or HSLA color, allowing you to control the 
+transparency of the specific color.
+-It affects only the color value it is applied to and does not 
+affect the element's background, border, or child elements.
+-You can specify different alpha values for different colors 
+within a single element, allowing for more granular control over 
+transparency.
+-The alpha channel does not affect the interaction with the 
+element. Even if a color has a low alpha value, the element and 
+its contents will still respond to events as if they were fully 
+opaque.
+-The alpha channel in RGBA or HSLA colors can be used for 
+more sophisticated effects, such as creating gradients with 
+varying transparency levels or overlaying semi-transparent 
+colors on top of each other.
+-The alpha channel in RGBA and HSLA can also be animated 
+using CSS transitions or animations.
+2)What is the most effective method for setting CSS color 
+properties?
+-Keyword Values,- Hexadecimal Values,-RGBA and HSLA Values
+3) Create 3 divisions in a web page.
+<!DOCTYPE html>
+<html><head>
+ <style>
+ .first-div {
+ background: linear-gradient(to bottom, #ff0000, #ff9999);
+ padding: 20px;}
+ .first-div p {
+ background-color: rgba(247, 60, 60, 0.8);
+ margin-bottom: 10px; padding: 10px;color: white;}
+ .second-div {
+ background-image: 
+url('D:\photo\galaxy_night_starry_sky_118126_1280x720.jpg');
+ background-repeat: repeat-x;
+ padding: 20px;}
+ .third-div {
+ background: url('D:\photo\house_forest_tree_126440_1280x720.jpg') 
+no-repeat right top;
+ background-size: contain;
+ padding: 20px;
+ position: fixed;
+ top: 0;
+ right: 0;
+ width: 400px;
+ }
+ </style>
+</head>
+<body>
+ <div class="first-div">
+ <p>Paragraph 1</p>
+ <p>Paragraph 2</p>
+ <p>Paragraph 3</p>
+ </div>
+ <div class="second-div">
+ <!-- Add your content here -->
+ </div>
+ <div class="third-div">
+ <p>Some text with box model</p>
+ </div>
+</body></html

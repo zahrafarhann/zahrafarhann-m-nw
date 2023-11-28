@@ -1,0 +1,101 @@
+Zahra Farhan Abbas 
+Fourth stage - network - morning
+Discussion Web
+lec 7
+Q1) What are the generic font families? Explain in details with examples
+1)Serif:
+Serif fonts have small decorative lines or strokes at the ends of characters. They 
+are commonly associated with a more traditional or formal appearance.
+Examples: Times New Roman, Georgia, serif.
+2)Sans-serif:
+Sans-serif fonts do not have the small decorative lines or strokes at the ends of 
+characters. They are often considered more modern and have a cleaner and 
+simpler appearance.
+Examples: Arial, Helvetica, sans-serif.
+3)Monospace:
+Monospace fonts have fixed-width characters where each character occupies the 
+same amount of horizontal space. This makes them useful for displaying code or 
+maintaining alignment.
+Examples: Courier New, Lucida Console, monospace.
+4)Cursive:
+Cursive fonts emulate handwriting or calligraphy styles, with flowing and 
+connected letterforms. They are often used to convey a sense of elegance or 
+creativity.
+Examples: Brush Script MT, Comic Sans MS, cursive.
+5)Fantasy:
+Fantasy fonts are decorative and unique, often used for special effects or stylized 
+headings. They can vary widely in appearance and are not easily classified.
+Examples: Impact, Papyrus, fantasy.
+Q2) It is recommended to use each family of generic fonts in fallback style. Why?
+Using each family of generic fonts in a fallback style is recommended to ensure 
+that the text on your web page remains legible and maintains a consistent 
+appearance across different devices and platforms
+By using each family of generic fonts in the fallback style, you provide a reliable 
+fallback mechanism that ensures your text remains readable and consistent, 
+regardless of the availability of specific fonts on different devices
+Q3) How can you insert Hoverable Table by CSS? Show me by code.
+<!DOCTYPE html>
+<html><head>
+ <style>
+ table {
+ border-collapse: collapse;
+ width: 100%;}
+ th, td {
+ border: 1px solid black;
+ padding: 8px;
+ text-align: left;}
+ tr:hover {background-color: lightgray;}
+ </style></head>
+<body><table>
+ <tr>
+ <th>Header 1</th>
+ <th>Header 2</th>
+ <th>Header 3</th>
+ </tr>
+ <tr>
+ <td>Data 1</td>
+ <td>Data 2</td>
+ <td>Data 3</td>
+ </tr>
+ <tr>
+ <td>Data 4</td>
+ <td>Data 5</td>
+ <td>Data 6</td>
+ </tr>
+ <!-- Add more rows as needed -->
+ </table>
+</body>
+</html>
+Q4) <!DOCTYPE html>
+<html><head>
+ <style> 
+ ul {
+ list-style-type: none;
+ padding: 0;}
+ ul.outside li::before {content: "•"; margin-right: 5px; }
+ ul.inside li::before {content: "•";margin-right: 5px;
+ position: relative;
+ left: -10px;} 
+.container {border: 2px solid black;padding: 10px;margin-bottom: 
+20px;}
+ </style>
+</head>
+<body>
+ <div class="container">
+ <ul class="outside">
+ <li>Coffe-A brewed drink prepared from roasted coffe 
+beans...</li><hr color="black">
+ <li>Tea</li><hr color="black">
+ <li>Coca-cola</li>
+ </ul>
+ </div>
+ <div class="container">
+ <ul class="inside">
+ <li>Coffe-A brewed drink prepared from roasted coffe 
+beans...</li><hr color="black">
+ <li>Tea</li><hr color="black">
+ <li>Coca-cola</li>
+ </ul>
+ </div>
+</body>
+</html>
